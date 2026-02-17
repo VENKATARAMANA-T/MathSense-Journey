@@ -44,16 +44,10 @@ const Home = () => {
       color: 'from-lavender-400 to-primary-500'
     },
     {
-      icon: '⚙️',
-      title: 'Customizable Experience',
-      description: 'Adjust sensory settings to match your child\'s unique needs and preferences.',
+      icon: '🎯',
+      title: 'Goal-Oriented Learning',
+      description: 'Clear learning objectives and milestones that guide children toward mastery.',
       color: 'from-ocean-400 to-mint-400'
-    },
-    {
-      icon: '👨‍👩‍👧',
-      title: 'Parent Dashboard',
-      description: 'Comprehensive analytics and insights to support your child\'s learning journey.',
-      color: 'from-peach-400 to-ocean-400'
     }
   ]
 

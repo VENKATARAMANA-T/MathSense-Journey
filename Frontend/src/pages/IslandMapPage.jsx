@@ -32,17 +32,6 @@ const IslandMapPage = () => {
       skills: ['Basic Addition', 'Combining Groups', 'Number Bonds'],
     },
     {
-      id: 'subtraction',
-      name: 'Subtraction Island',
-      emoji: '➖',
-      description: 'Take away and count what remains!',
-      path: '/islands/subtraction',
-      position: { top: '30%', left: '60%' },
-      difficulty: 'Medium',
-      locked: !progress.completedIslands?.includes('addition'),
-      skills: ['Basic Subtraction', 'Taking Away', 'Difference'],
-    },
-    {
       id: 'patterns',
       name: 'Pattern Island',
       emoji: '🎨',

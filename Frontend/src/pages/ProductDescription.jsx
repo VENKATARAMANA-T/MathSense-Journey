@@ -59,12 +59,6 @@ const ProductDescription = () => {
       improvement: 'Optimized re-rendering of complex visualizations provides clear progress tracking'
     },
     {
-      operation: 'Settings Customization',
-      expectedOutput: 'Adjust audio, visual, animation speed preferences',
-      reactConcepts: 'Form handling, localStorage persistence, useEffect (sync settings), Context API',
-      improvement: 'Persistent user preferences across sessions improves accessibility for sensory needs'
-    },
-    {
       operation: 'Voice Narration System',
       expectedOutput: 'Text-to-speech with speed control and replay functionality',
       reactConcepts: 'useRef (audio element), Custom Hook (useAudio), Event handlers, Web Speech API',
@@ -224,9 +218,23 @@ const ProductDescription = () => {
           <h1 className="text-5xl sm:text-6xl font-display font-bold gradient-text mb-6">
             Project Documentation
           </h1>
-          <p className="text-xl text-ocean-600 max-w-3xl mx-auto">
+          <p className="text-xl text-ocean-600 max-w-3xl mx-auto mb-6">
             Comprehensive overview of MathSense Journey - A research-backed platform for autism math education
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+            <a
+              href="https://github.com/VENKATARAMANA-T/MathSense-Journey.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-ocean-500 to-primary-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all"
+            >
+              <span className="text-2xl mr-2">🔗</span>
+              View on GitHub
+            </a>
+            <div className="text-sm text-ocean-600 bg-ocean-50 px-4 py-2 rounded-full">
+              Course: <span className="font-bold">23CSE461 - Full Stack Frameworks</span>
+            </div>
+          </div>
         </motion.div>
 
         {/* Course Information */}
@@ -263,12 +271,12 @@ const ProductDescription = () => {
                 <div className="pt-4">
                   <p className="text-sm text-ocean-500 font-semibold mb-1">GitHub Repository</p>
                   <a
-                    href="https://github.com/VENKATARAMANA-T/Mathsense-Journey.git"
-                    className="text-ocean-500 hover:text-ocean-700"
+                    href="https://github.com/VENKATARAMANA-T/MathSense-Journey.git"
+                    className="text-ocean-500 hover:text-ocean-700 break-all"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    github.com/VENKATARAMANA-T/Mathsense-Journey
+                    github.com/VENKATARAMANA-T/MathSense-Journey
                   </a>
                 </div>
                 <div className="pt-2">

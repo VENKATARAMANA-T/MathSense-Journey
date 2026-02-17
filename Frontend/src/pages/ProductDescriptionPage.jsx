@@ -6,22 +6,10 @@ const ProductDescriptionPage = () => {
   // Team members data
   const teamMembers = [
     {
-      name: 'Your Name',
-      rollNo: 'CB.EN.U4AIE21001',
+      name: 'T Venkataramana',
+      rollNo: 'CB.SC.U4CSE23055',
       photo: '👨‍💻',
       role: 'Full Stack Developer',
-    },
-    {
-      name: 'Team Member 2',
-      rollNo: 'CB.EN.U4AIE21002',
-      photo: '👩‍💻',
-      role: 'UI/UX Designer',
-    },
-    {
-      name: 'Team Member 3',
-      rollNo: 'CB.EN.U4AIE21003',
-      photo: '👨‍🔬',
-      role: 'Research Lead',
     },
   ];
 
@@ -74,18 +62,6 @@ const ProductDescriptionPage = () => {
       output: 'Progressive hints with visual cues',
       reactConcepts: 'useState (hint level), useCallback (memoized functions)',
       improvement: 'Performance optimization for frequently called functions',
-    },
-    {
-      name: 'Settings Customization',
-      output: 'Adjust audio, visual, speed preferences',
-      reactConcepts: 'Form handling, Local Storage, useEffect (persist settings)',
-      improvement: 'Persistent user preferences improve accessibility',
-    },
-    {
-      name: 'Parent Dashboard',
-      output: 'Real-time analytics of child\'s session',
-      reactConcepts: 'Context API, useEffect (polling), Chart components',
-      improvement: 'Global state for multi-component data sharing',
     },
   ];
 
@@ -216,8 +192,8 @@ const ProductDescriptionPage = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h3 className="font-semibold text-gray-700 mb-2">Course Details</h3>
-              <p className="text-gray-600"><span className="font-medium">Course Code:</span> [Your Course Code]</p>
-              <p className="text-gray-600"><span className="font-medium">Course Name:</span> [Your Course Name]</p>
+              <p className="text-gray-600"><span className="font-medium">Course Code:</span> 23CSE461</p>
+              <p className="text-gray-600"><span className="font-medium">Course Name:</span> Full Stack Frameworks</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-700 mb-2">Instructor</h3>
@@ -236,22 +212,18 @@ const ProductDescriptionPage = () => {
           </div>
 
           <div className="mt-6 pt-6 border-t border-gray-200">
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <h3 className="font-semibold text-gray-700 mb-2 flex items-center">
-                  <FaGithub className="mr-2" /> GitHub
+                  <FaGithub className="mr-2" /> GitHub Repository
                 </h3>
-                <a href="https://github.com/yourusername/mathsense-journey" className="text-primary-600 hover:underline">
-                  View Repository →
+                <a href="https://github.com/VENKATARAMANA-T/MathSense-Journey.git" className="text-primary-600 hover:underline break-all" target="_blank" rel="noopener noreferrer">
+                  github.com/VENKATARAMANA-T/MathSense-Journey →
                 </a>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-700 mb-2">Academic Collaborator</h3>
-                <p className="text-gray-600">[Academic Institution Name]</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-700 mb-2">Industry Collaborator</h3>
-                <p className="text-gray-600">[Industry Partner Name]</p>
+                <p className="text-gray-600">Amrita Vishwa Vidyapeetham</p>
               </div>
             </div>
           </div>

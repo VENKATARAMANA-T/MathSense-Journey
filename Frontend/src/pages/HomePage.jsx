@@ -248,9 +248,6 @@ const HomePage = () => {
             <Link to="/product" className="text-gray-400 hover:text-white transition">
               About
             </Link>
-            <Link to="/parent-portal" className="text-gray-400 hover:text-white transition">
-              Parent Portal
-            </Link>
             <a href="mailto:t_senthilkumar@cb.amrita.edu" className="text-gray-400 hover:text-white transition">
               Contact
             </a>
