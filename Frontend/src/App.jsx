@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { AudioProvider } from './hooks/useAudio'
 import { useEffect } from 'react'
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <AudioProvider>
-      <Router basename="/MathSense-Journey">
+      <Router>
         <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Navbar />
