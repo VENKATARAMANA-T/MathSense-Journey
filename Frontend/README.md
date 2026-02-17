@@ -6,6 +6,8 @@ A comprehensive React-based educational web application designed specifically fo
 
 🔗 **Repository:** [https://github.com/VENKATARAMANA-T/MathSense-Journey.git](https://github.com/VENKATARAMANA-T/MathSense-Journey.git)
 
+🌐 **Live URL:** [https://venkataramana-t.github.io/MathSense-Journey/](https://venkataramana-t.github.io/MathSense-Journey/)
+
 ---
 
 ## 📚 Academic Information
@@ -86,55 +88,6 @@ npm run preview
 ### Access the Application
 - **Development:** Open `http://localhost:5173` in your browser (Vite default port)
 - **Production:** Deploy the `dist` folder to your hosting service
-
----
-
-## 📁 Project Structure
-
-\`\`\`
-Frontend/
-├── index.html                 # Main HTML entry point
-├── package.json              # Project dependencies and scripts
-├── vite.config.js            # Vite configuration
-├── tailwind.config.js        # Tailwind CSS configuration
-├── postcss.config.js         # PostCSS configuration
-├── README.md                 # This file
-│
-└── src/
-    ├── main.jsx              # Application entry point
-    ├── App.jsx               # Main App component with routing
-    │
-    ├── assets/               # Images, icons, and static files
-    │
-    ├── components/           # Reusable components
-    │   └── common/
-    │       ├── AudioPlayer.jsx      # Audio playback management
-    │       ├── EmotionCheck.jsx     # Emotional state monitoring
-    │       ├── Footer.jsx           # Footer component
-    │       └── Navbar.jsx           # Navigation bar
-    │
-    ├── hooks/                # Custom React hooks
-    │   └── useAudio.jsx      # Audio management hook
-    │
-    ├── pages/                # Page components
-    │   ├── HomePage.jsx              # Landing page
-    │   ├── IslandMapPage.jsx         # Interactive island map
-    │   ├── DashboardPage.jsx         # Student dashboard
-    │   ├── ProgressPage.jsx          # Progress tracking
-    │   ├── AchievementsPage.jsx      # Achievements and badges
-    │   ├── ProfilePage.jsx           # User profile
-    │   ├── ProductDescriptionPage.jsx # About the platform
-    │   ├── LoginPage.jsx             # Authentication
-    │   │
-    │   └── islands/          # Learning island modules
-    │       ├── CountingIsland.jsx    # Numbers 1-10
-    │       ├── AdditionIsland.jsx    # Basic addition
-    │       ├── PatternIsland.jsx     # Pattern recognition
-    │       └── ShapeIsland.jsx       # Shape identification
-    │
-    └── styles/
-        └── index.css         # Global styles and Tailwind imports
-\`\`\`
 
 ---
 
@@ -258,78 +211,6 @@ This sequential unlocking ensures children build a strong foundation before adva
 ### State Management
 - **React Hooks** - useState, useEffect, useContext
 - **Local Storage** - Client-side data persistence
-
----
-
-## 🎨 Design Principles
-
-### Accessibility for ASD
-- **Visual Clarity:** High contrast, clear fonts, consistent layouts
-- **Predictability:** Consistent navigation, familiar patterns
-- **Sensory Control:** Adjustable audio, gentle animations
-- **Positive Reinforcement:** Encouraging feedback, no negative messages
-- **Pacing:** Self-paced learning, no time pressure
-
-### User Experience
-- **Intuitive Navigation:** Clear paths, obvious buttons
-- **Immediate Feedback:** Instant response to interactions
-- **Progress Visibility:** Clear indicators of achievement
-- **Error Tolerance:** Forgiving interactions, encourage retry
-
----
-
-## 📱 Browser Compatibility
-
-- ✅ Chrome (recommended)
-- ✅ Firefox
-- ✅ Edge
-- ✅ Safari
-- ⚠️ IE11 (limited support)
-
----
-
-## 🔧 Development
-
-### Available Scripts
-
-\`\`\`bash
-# Start development server with hot reload
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build locally
-npm run preview
-
-# Lint code (if configured)
-npm run lint
-\`\`\`
-
-### Development Guidelines
-1. Follow component-based architecture
-2. Use functional components with hooks
-3. Maintain consistent code formatting
-4. Test on multiple browsers
-5. Ensure accessibility standards
-6. Optimize for performance
-
----
-
-## 🚀 Deployment
-
-### Build Process
-\`\`\`bash
-npm run build
-\`\`\`
-
-This creates an optimized production build in the `dist/` folder.
-
-### Hosting Options
-- **Vercel** - Recommended for Vite projects
-- **Netlify** - Easy deployment with drag-and-drop
-- **GitHub Pages** - Free hosting for static sites
-- **Firebase Hosting** - Google's hosting solution
 
 ---
 

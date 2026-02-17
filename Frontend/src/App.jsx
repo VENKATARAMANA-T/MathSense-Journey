@@ -37,7 +37,7 @@ function App() {
 
   return (
     <AudioProvider>
-      <Router>
+      <Router basename="/MathSense-Journey">
         <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Navbar />

@@ -92,7 +92,7 @@ const IslandMap = () => {
       emoji: '1️⃣',
       color: 'from-ocean-400 to-primary-500',
       description: 'Learn to count with fun objects!',
-      position: { top: '60%', left: '15%' },
+      position: { top: '45%', left: '15%' },
       size: 'large'
     },
     {
@@ -102,7 +102,7 @@ const IslandMap = () => {
       emoji: '➕',
       color: 'from-mint-400 to-ocean-400',
       description: 'Combine groups and discover sums!',
-      position: { top: '45%', left: '40%' },
+      position: { top: '30%', left: '40%' },
       size: 'large'
     },
     {
@@ -112,7 +112,7 @@ const IslandMap = () => {
       emoji: '🔵',
       color: 'from-lavender-400 to-primary-500',
       description: 'Complete exciting patterns!',
-      position: { top: '70%', left: '65%' },
+      position: { top: '55%', left: '65%' },
       size: 'medium'
     },
     {
@@ -122,7 +122,7 @@ const IslandMap = () => {
       emoji: '🔺',
       color: 'from-peach-400 to-lavender-400',
       description: 'Explore wonderful shapes!',
-      position: { top: '35%', left: '75%' },
+      position: { top: '20%', left: '75%' },
       size: 'medium'
     }
   ]
