@@ -218,23 +218,9 @@ const ProductDescription = () => {
           <h1 className="text-5xl sm:text-6xl font-display font-bold gradient-text mb-6">
             Project Documentation
           </h1>
-          <p className="text-xl text-ocean-600 max-w-3xl mx-auto mb-6">
+          <p className="text-xl text-ocean-600 max-w-3xl mx-auto">
             Comprehensive overview of MathSense Journey - A research-backed platform for autism math education
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
-            <a
-              href="https://github.com/VENKATARAMANA-T/MathSense-Journey.git"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-ocean-500 to-primary-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all"
-            >
-              <span className="text-2xl mr-2">🔗</span>
-              View on GitHub
-            </a>
-            <div className="text-sm text-ocean-600 bg-ocean-50 px-4 py-2 rounded-full">
-              Course: <span className="font-bold">23CSE461 - Full Stack Frameworks</span>
-            </div>
-          </div>
         </motion.div>
 
         {/* Course Information */}
