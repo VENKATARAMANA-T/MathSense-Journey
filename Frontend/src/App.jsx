@@ -13,6 +13,7 @@ import PatternIsland from './pages/islands/PatternIsland'
 import ShapeIsland from './pages/islands/ShapeIsland'
 import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
+import ScreenshotsPage from './pages/ScreenshotsPage'
 
 // Components
 import Navbar from './components/common/Navbar'
@@ -53,6 +54,7 @@ function App() {
                 <Route path="/islands/shape" element={<ShapeIsland />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/screenshots" element={<ScreenshotsPage />} />
               </Routes>
             </AnimatePresence>
           </main>

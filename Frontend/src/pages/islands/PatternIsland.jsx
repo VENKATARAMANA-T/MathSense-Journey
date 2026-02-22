@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { useAudio } from '../../hooks/useAudio'
+import { useScreenshot } from '../../hooks/useScreenshot'
 import { useNavigate } from 'react-router-dom'
 
 const PatternIsland = () => {
@@ -19,6 +20,7 @@ const PatternIsland = () => {
   const [score, setScore] = useState(0)
   
   const { speak, playSound, playCelebration } = useAudio()
+  const { captureElement } = useScreenshot()
   const navigate = useNavigate()
 
   const shapes = ['🔵', '🔴', '🟢', '🟡', '🟣', '🟠']
@@ -199,6 +201,7 @@ const PatternIsland = () => {
               onClick={() => setShowCelebration(false)}
             >
               <motion.div
+                id="achievement-certificate"
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
                 exit={{ scale: 0, rotate: 180 }}
@@ -221,10 +224,26 @@ const PatternIsland = () => {
                 <p className="text-xl text-ocean-700 mb-6">
                   You earned <span className="font-bold text-ocean-800">{score}</span> points!
                 </p>
-                <p className="text-lg text-ocean-600 mb-6">
+                <p className="text-lg text-ocean-600 mb-2">
                   Great pattern solving! 🎉
                 </p>
-                <div className="flex gap-4 justify-center">
+                <p className="text-sm text-ocean-500 mb-6">
+                  Accuracy: {accuracy}%
+                </p>
+                <div className="flex gap-3 justify-center flex-wrap">
+                  <button
+                    onClick={async () => {
+                      await captureElement('achievement-certificate', {
+                        islandName: 'Pattern',
+                        score: score,
+                        accuracy: accuracy
+                      })
+                      alert('Screenshot saved! Check the Screenshots page.')
+                    }}
+                    className="btn-secondary text-sm px-4 py-2"
+                  >
+                    📸 Capture
+                  </button>
                   <button
                     onClick={() => navigate('/islands')}
                     className="btn-primary"
