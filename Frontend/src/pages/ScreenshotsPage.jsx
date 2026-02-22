@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { useScreenshot } from '../hooks/useScreenshot'
-import Navbar from '../components/common/Navbar'
 
 const ScreenshotsPage = () => {
   const [screenshots, setScreenshots] = useState([])
@@ -30,8 +29,6 @@ const ScreenshotsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-ocean-50 to-mint-50">
-      <Navbar />
-      
       <div className="container mx-auto px-4 pt-24 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

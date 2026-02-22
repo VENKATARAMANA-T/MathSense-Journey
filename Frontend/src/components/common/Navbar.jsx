@@ -7,6 +7,9 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const location = useLocation()
 
+  const clothGameUrl =
+    'https://venkataramana-t.github.io/Wardrobe-Wonder-Children-s-Clothing-Learning-App/'
+
   useEffect(() => {
     let lastScrollY = 0
     
@@ -92,6 +95,18 @@ const Navbar = () => {
             >
               👤
             </Link>
+            <a
+              href={clothGameUrl}
+              className={`ml-3 px-4 py-2 rounded-full font-semibold transition-all duration-300 ${
+                isScrolled
+                  ? location.pathname === '/islands'
+                    ? 'text-sky-900 hover:bg-sky-300'
+                    : 'text-ocean-700 hover:bg-ocean-100'
+                  : 'text-ocean-600 hover:bg-ocean-50'
+              }`}
+            >
+              Cloth game
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -134,6 +149,13 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            <a
+              href={clothGameUrl}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-4 py-3 rounded-xl font-semibold transition-all text-ocean-700 hover:bg-ocean-50"
+            >
+              Cloth game
+            </a>
           </motion.div>
         )}
       </div>
